@@ -1,5 +1,5 @@
 # Kibana Tag Cloud Plugin
-A Tag Cloud Plugin for Kibana 4
+A Tag Cloud Plugin for Kibana 5.0.1
 
 ![Kibana Tag Cloud](tagcloud.png)
 
