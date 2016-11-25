@@ -3,8 +3,8 @@ require('plugins/tagcloud/lib/cloud_controller.js');
 require('plugins/tagcloud/lib/cloud_directive.js');
 
 function TagCloudProvider(Private) {
-  var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
-  var Schemas = Private(require('ui/Vis/Schemas'));
+  var TemplateVisType = Private(require('ui/template_vis_type/template_vis_type'));
+  var Schemas = Private(require('ui/vis/schemas'));
 
   return new TemplateVisType({
     name: 'tagcloud',
