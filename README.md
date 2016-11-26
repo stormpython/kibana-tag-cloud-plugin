@@ -10,9 +10,16 @@ Kibana 5.0.1
 
 ### Installation steps
 1. Download and unpack [Kibana](https://www.elastic.co/downloads/kibana).
-2. From the Kibana root directory, install the plugin with the following command:
+Note the location as it will be used as $KIBANA_HOME.
+2. Install the plugin with the following commands:
 
-```$ bin/kibana plugin -i tagcloud -u https://github.com/stormpython/tagcloud/archive/master.zip```
+```
+mkdir -p tmp/kibana
+cd tmp/kibana
+git clone https://github.com/stormpython/tagcloud.git
+cd ../
+$KIBANA_HOME/bin/kibana-plugin install file:///`pwd`/tagcloud.zip
+```
 
 ### Disclosure
 This repo is in its early stages. There is an outstanding [bug](https://github.com/stormpython/kibana-tag-cloud-plugin/issues/1) that needs to be fixed. In addition, please note d3-cloud's warning regarding how word clouds are rendered.
