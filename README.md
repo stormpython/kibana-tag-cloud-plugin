@@ -1,12 +1,12 @@
 # Kibana Tag Cloud Plugin
-A Tag Cloud Plugin for Kibana 5.0.1
+A Tag Cloud Plugin for Kibana 5.1.1
 
 ![Kibana Tag Cloud](tagcloud.png)
 
 This visualization was inspired by [Tim Roe's](https://www.timroes.de/) blog [post](https://www.timroes.de/2015/12/06/writing-kibana-4-plugins-visualizations-using-data/) on creating a tag cloud plugin for Kibana 5. It is built using [D3](d3js.org) and Jason Davie's [d3-cloud](https://github.com/jasondavies/d3-cloud) plugin.
 
 ### Requirements
-Kibana 5.0.1  
+Kibana 5.1.1  
 
 ### Installation steps
 1. Download and unpack [Kibana](https://www.elastic.co/downloads/kibana).
@@ -18,6 +18,7 @@ mkdir -p tmp/kibana
 cd tmp/kibana
 git clone https://github.com/stormpython/tagcloud.git
 cd ../
+zip -r tagcloud.zip kibana
 $KIBANA_HOME/bin/kibana-plugin install file:///`pwd`/tagcloud.zip
 ```
 

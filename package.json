@@ -1,6 +1,6 @@
 {
   "name": "tagcloud",
-  "version": "5.0.1",
+  "version": "5.1.1",
   "dependencies": {
     "d3": "3.5.12",
     "d3.layout.cloud": "1.2.0",
